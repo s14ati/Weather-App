@@ -42,22 +42,22 @@ async function checkWeather(cityName) {
         // now change the weather condition image
 
         if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "../Weather-App/Assets/cloud.png";
+            weatherIcon.src = "./Assets/cloud.png";
         }
         else if (data.weather[0].main == "Drizzling") {
             weatherIcon.src = "../Weather-App/Assets/drizzling.jpg";
         }
         else if (data.weather[0].main == "Clear") {
-            weatherIcon.src = "../Weather-App/Assets/clear.png";
+            weatherIcon.src = "./Assets/clear.png";
         }
         else if (data.weather[0].main == "Rain") {
-            weatherIcon.src = "../Weather-App/Assets/rain.png";
+            weatherIcon.src = "./Assets/rain.png";
         }
         else if (data.weather[0].main == "Mist") {
-            weatherIcon.src = "../Weather-App/Assets/misty.webp";
+            weatherIcon.src = "./Assets/Misty.webp";
         }
         else if (data.weather[0].main == "Snow") {
-            weatherIcon.src = "../Weather-App/Assets/snow.webp";
+            weatherIcon.src = "./Assets/snow.webp";
         }
 
         document.querySelector(".weather").style.display = "block";
