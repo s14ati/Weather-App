@@ -44,8 +44,8 @@ async function checkWeather(cityName) {
         if (data.weather[0].main == "Clouds") {
             weatherIcon.src = "./Assets/cloud.png";
         }
-        else if (data.weather[0].main == "Drizzling") {
-            weatherIcon.src = "../Weather-App/Assets/drizzling.jpg";
+        else if (data.weather[0].main == "Drizzle") {
+            weatherIcon.src = "./Assets/drizzle.webp";
         }
         else if (data.weather[0].main == "Clear") {
             weatherIcon.src = "./Assets/clear.png";
